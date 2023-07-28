@@ -1,0 +1,160 @@
+.home {
+  display: flex;
+}
+
+.productContainer {
+  display: flex;
+  width: 78%;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.filters {
+  background-color: #343a40;
+  color: wheat;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 10px;
+  height: 86vh;
+}
+
+/* WE ARE TARGETING EVERY SPAN IN FILTERS COMPONENT */
+
+.filters > span {
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.products {
+  width: 30%;
+  margin: 10px;
+}
+
+.side {
+  display: flex;
+  height: 9vh;
+  width: 100%;
+  font-weight: bold;
+  /* border-radius: 100rem !important;
+  border: 10rem !important; */
+}
+
+.cartitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+add complete feature with your experience .cartItemImg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.cartItemDetail {
+  display: flex;
+  flex: 1;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+.summary {
+  min-width: 40%;
+  margin-left: 80rem;
+  font-style: oblique;
+}
+
+/* ...Previous CSS... */
+
+/* Additional CSS for Cart Component */
+/* ...Previous CSS... */
+
+/* Add hover effect on cart items */
+.cartitem:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+/* Style the cart item image */
+.cartItemImg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px; /* Add some margin between the image and item details */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect to the image */
+}
+
+/* Add transition effect to the cart item image */
+.cartitem img {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Apply a slight scale-up effect on cart item image on hover */
+.cartitem:hover img {
+  transform: scale(1.1);
+}
+
+/* Add a border to the checkout and empty cart buttons */
+.summary button {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Add hover effect to buttons */
+.summary button:hover {
+  opacity: 0.8;
+}
+
+/* Center the loading spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Additional CSS for Cart Component - Responsive layout */
+/* ...Previous CSS... */
+
+/* Media Queries */
+@media (max-width: 771px) {
+  .filters {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .filters > span {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 18px !important;
+  }
+
+  .productContainer {
+    width: 58%;
+    padding: 0;
+  }
+
+  .search {
+    display: flex;
+    width: 30%;
+    margin-right: 70px;
+  }
+
+  .products {
+    width: 100%;
+  }
+}
